@@ -6,9 +6,10 @@ export const RandomZikr = () => {
   const [text, setText] = useState("جاري التحميل....");
   const [count, setCount] = useState("ذكر عشوائي");
   const [azkarCount, setAzkarCount] = useState('');
+  const [error , setError] = useState(false)
   useEffect(() => {
     fetch(
-      "https://ayah.nawafdev.com/api/dekr",
+      "https://cors-proxy.fringe.zone/https://ayah.nawafdev.com/api/dekr",
       {
         method: "GET",
       }
@@ -20,7 +21,10 @@ export const RandomZikr = () => {
         setText(res.content);
         setCount(res.count);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err)
+        setError(true)
+      });
   }, []);
   return (
     <>
@@ -28,7 +32,7 @@ export const RandomZikr = () => {
         <p>{type}</p>
       </div>
       <div className="azkarCollectionRand">
-          {count > 0 ? <div
+          {count > 0 && !error ? <div
           className="randZikrPS"
             onClick={() => setTimeout(() => {
               setCount(count => count - 1)
@@ -38,7 +42,7 @@ export const RandomZikr = () => {
         >
           <p>{text}</p>
           <p className="repeats">{count}</p>
-        </div> : <p className="noNo"> تم الانتهاء بحمد الله من {azkarCount} ذكر</p>}
+        </div> : error ? <p className="noNo"> حدث خطا في جلب البيانات</p> : !error && count === 0 ? <p className="noNo"> تم الانتهاء بحمد الله من {azkarCount} ذكر</p> : ''}
       </div>
     </>
   );
