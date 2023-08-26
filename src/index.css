@@ -49,6 +49,7 @@ img {
   opacity: 0;
   z-index: -1 !important;
   top : -1000px !important;
+  display : none;
 }
 body {
   font-family: 'Cairo', sans-serif !important;
