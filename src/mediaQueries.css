@@ -21,7 +21,7 @@
       top:88px;
       width: 0;
       left: -200px;
-      transition: 1s !important;
+      transition: 0.5s !important;
       z-index: 1000;
       & * {
         opacity: 0 !important;
@@ -36,7 +36,7 @@
       opacity: 1 !important;
       top: 88px;
       width: 100%;
-      transition: 1s !important;
+      transition: 0.5s !important;
       left: 0;
       right: 0;
       & a{
@@ -194,7 +194,7 @@
       top:88px;
       width: 0;
       left: -200px;
-      transition: 1s !important;
+      transition: 0.5s !important;
       z-index: 1000;
       & * {
         opacity: 0 !important;
@@ -209,7 +209,7 @@
       opacity: 1 !important;
       top: 88px;
       width: 100%;
-      transition: 1s !important;
+      transition: 0.5s !important;
       left: 0;
       right: 0;
       & a{
@@ -367,7 +367,7 @@
       top:88px;
       width: 0;
       left: -200px;
-      transition: 1s !important;
+      transition: 0.5s !important;
       z-index: 1000;
       & * {
         opacity: 0 !important;
@@ -382,7 +382,7 @@
       opacity: 1 !important;
       top: 88px;
       width: 100%;
-      transition: 1s !important;
+      transition: 0.5s !important;
       left: 0;
       right: 0;
       & a{
