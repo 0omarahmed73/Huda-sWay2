@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Cairo', sans-serif !important;
+  transition: 0.5s !important;
+}
+.fade-appear,
+.fade-enter {
+opacity: 0;
+z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+opacity: 1;
+transition: opacity 450ms linear 250ms;
+}
+.fade-exit {
+opacity: 1;
+}
+.fade-exit.fade-exit-active {
+opacity: 0;
+transition: opacity 150ms linear;
+}
+.rhap_container {
+  border-radius: 10px;
+  margin-block: 5px;
+}
+ .rhap_main-controls {
+  color: black;
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  & button {
+    margin-top: -10px;
+  }
+ }
+.links {
+  position: relative;
+  z-index: 10000 !important;
+}
+img {
+  max-width: 100%;
+}
+.overlay.hide {
+  opacity: 0;
+  z-index: -1 !important;
+  top : -1000px !important;
+}
+body {
+  font-family: 'Cairo', sans-serif !important;
+}
+
+a.active {
+  background-color: rgb(34, 34, 34) !important;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+  gap: 40px;
+  padding: 50px 100px 5px 100px;
+  flex-direction: row;
+}
+
+nav {
+  .container-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: black;
+    border: 1px solid black;
+    padding: 5px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .allLogo {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+      cursor: pointer;
+
+      .logo {
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        & img {
+          max-width: 100%;
+        }
+      }
+
+      & p {
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-right: auto;
+      transition: 0.5s;
+      & a {
+        position: relative;
+        z-index: 1000;
+        all: unset;
+        padding: 30px 10px;
+        color: white;
+        cursor: pointer;
+        display: block;
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.5s;
+
+        &:hover {
+          background-color: rgb(34, 34, 34);
+        }
+      }
+    }
+  }
+}
+
+.main {
+  min-height: 100svh;
+  background-color: black;
+
+  .mainPage {
+    .container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100svh;
+      gap: 40px;
+      padding: 50px 100px 5px 100px;
+      flex-direction: row;
+
+      .part-one {
+        .img {
+          width: 300px;
+
+          & img {
+            border-radius: 50px;
+            width: 100%;
+          }
+        }
+      }
+
+      .part-two {
+        color: white;
+
+      }
+
+    }
+  }
+}
+
+.about {
+  .container {
+    gap: 10px;
+    justify-content: center !important;
+    flex-direction: column;
+
+    & p {
+      width: 500px;
+      text-align: center;
+    }
+  }
+}
+
+.prayers {
+  .container {
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    padding-top: 120px;
+    margin: auto;
+    flex-direction: row;
+
+    .part-two {
+      margin-top: 20px;
+
+      & h1 {
+        margin-bottom: 7px;
+      }
+
+      .button-input {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        & input {
+          min-width: 300px;
+          padding: 5px 15px;
+          border-radius: 10px;
+          color: black;
+          font-family: 'Cairo', sans-serif;
+
+          &::placeholder {
+            transition: 0.3s;
+          }
+
+          &:focus {
+            outline: none;
+          }
+
+          &:focus::placeholder {
+            opacity: 0;
+          }
+        }
+
+        & button {
+          padding: 2px 50px;
+          color: black;
+          border-radius: 10px;
+          border: 1px solid transparent;
+          transition: 0.5s;
+          cursor: pointer;
+
+          &:hover {
+            background-color: transparent;
+            border-color: white;
+            color: white;
+          }
+        }
+
+      }
+
+      .prayer-times {
+        min-width: 200px;
+        margin-top: 20px;
+        border: 1px solid white;
+        min-height: 200px;
+        border-radius: 20px;
+        width: fit-content;
+        background-color: #292c32;
+
+
+        .prayer {
+          display: flex;
+          flex-direction: row;
+          gap: 5px;
+          padding: 3px 40px;
+        }
+
+        .prayer:not(:last-child) {
+          border-bottom: 1px solid white;
+
+        }
+      }
+
+      .bottom-part {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        .time {
+          background-color: #292c32;
+          margin-top: 20px;
+          border: 1px solid white;
+          height: fit-content;
+          border-radius: 20px;
+          width: fit-content;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          .rem {
+            border-top: 1px solid white ;
+          }
+          /* gap: 1px; */
+          & *:not(:last-of-type) {
+            font-size: 14px;
+            padding: 3px 10px;
+            height: fit-content;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ayah {
+  .container {
+    flex-direction: row !important;
+
+    .img {
+      width: 400px;
+      animation-name: moveQuran;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-duration: 4s;
+    }
+  }
+}
+
+.random-verse {
+  background-color: #fffff5;
+  padding: 10px 20px;
+  border-radius: 10px;
+
+  & p {
+    color: black;
+  }
+
+  .random-surah-p {
+    text-align: left;
+  }
+}
+
+.hadith {
+  .container {
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+
+    .part-one {
+      .img {
+        width: 250px;
+      }
+    }
+
+    .part-two {
+      width: 100%;
+
+      .hadith-text {
+        margin-top: 15px;
+        min-height: 100px;
+        padding: 10px 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: white;
+
+        .setHadith {
+          color: black;
+          line-height: 2;
+        }
+      }
+    }
+  }
+}
+
+.azkar {
+  .container {
+    flex-direction: column;
+
+    .types {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.azkarCollectionRand {
+  overflow: hidden !important;
+  cursor: pointer;
+  user-select: none;
+}
+.randZikrPS {
+  min-width: 200px !important;
+  padding: 20px !important;
+  border: 1px solid white;
+  border-radius:10px ;
+  text-align: center;
+  overflow: hidden;
+
+  .repeats {
+    background-color: white;
+    color: black;
+    margin-top: 5px;
+    border-radius: 3px;
+
+  }
+}
+.zikrtype {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    scale: 1.04;
+  }
+
+  & * {
+    text-decoration: none;
+    color: black !important;
+  }
+}
+
+.before-types {
+  & h1 {
+    margin-bottom: 10px;
+  }
+}
+.azkarCollection {
+  max-height: 270px;
+}
+.showAzkar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  .azkarCollection , .azkarCollectionRand {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    .zikrPs {
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 15px;
+      transition: 1s;
+      width: 40%;
+      border: 1px solid white;
+      margin-bottom: 20px;
+      line-height: 2;
+      word-spacing: 5px;
+
+      .repeats {
+        background-color: white;
+        color: black;
+        margin-top: 5px;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+.azkarCollection::-webkit-scrollbar {
+  opacity: 0;
+}
+
+.zikrPs.hide {
+  animation: slideaway 200ms;
+  display: none;
+}
+
+/* Animation */
+
+@keyframes moveQuran {
+  0% {
+    margin-top: 0px;
+  }
+
+  50% {
+    margin-top: 40px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes slideaway {
+  from {
+    display: block;
+  }
+
+  to {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+}
+
+.no {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  margin: auto;
+  width: fit-content;
+  margin: auto;
+  display: none;
+}
+.noNo{
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  margin: auto;
+  width: fit-content;
+  margin: auto;
+}
+.noNo2 {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  margin: auto;
+  display: none;
+  width: fit-content;
+  margin: -13px auto;
+}
+
+.burger , .burger *{
+  transition: all 0.5s ease-out;
+}

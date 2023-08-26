@@ -1,0 +1,593 @@
+@media (max-width: 450.98px) {
+  .rhap_progress-container , .rhap_volume-container {
+    z-index: -1;
+   }  
+  .container-nav {
+    padding: 10px 20px !important;
+    .overlay {
+      position: fixed;
+      z-index: 200;
+      top: 88px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.589);
+    }
+    .links {
+      opacity: 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      position: fixed !important;
+      top:88px;
+      width: 0;
+      left: -200px;
+      transition: 1s !important;
+      z-index: 1000;
+      & * {
+        opacity: 0 !important;
+        width: 0;
+      }
+    }
+    .links.show {
+      z-index: 10000;
+      display: flex !important;
+      flex-direction: column;
+      position: fixed;
+      opacity: 1 !important;
+      top: 88px;
+      width: 100%;
+      transition: 1s !important;
+      left: 0;
+      right: 0;
+      & a{
+        display: block !important;
+        opacity: 1 !important;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        color: white;
+        border-bottom: 1px solid #333;
+      }  
+    }
+    .burger {
+      height: 30px;
+      width: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      cursor: pointer;
+      & span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: white;
+      }
+    }
+  }
+  .mainPage {
+  .container {
+    width: 100% !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+
+    .part-two {
+      width: 300px;
+      text-align: center;
+    }
+  }
+}
+.about {
+  .container {
+    width: 100%;
+    padding: 50px 40px 5px 40px;
+    & p{
+      width: 100%;
+    }
+  }
+}
+.prayers {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .img {
+      width: 200px;
+      margin-top: -20px;
+    }
+    .part-two {
+      margin-top: -20px;
+      & h1 {
+        text-align: center;
+      }
+      .button-input {
+        justify-content: center;
+        & input {
+          min-width: 60% !important;
+          max-width: 100% !important;
+                }
+      }
+    }
+    .bottom-part {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .time {
+    display: none !important;
+  }
+}
+.azkar {
+  .container {
+    padding: 50px 10px 5px 10px;
+    text-align: center;
+    .before-types {
+      & h1 {
+        margin-bottom: 20px;
+      }
+
+    }
+  }
+}
+.hadith {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px 5px 30px;
+    .part-one {
+      .img {
+        width: 170px !important;
+      }
+    }
+    .part-two {
+      margin-top: -31px;
+
+    }
+  }
+}
+.ayah {
+  .container {
+    padding: 50px 40px 5px 40px;
+    flex-direction: column !important;
+    .part-one {
+      .img {
+        width: 250px !important;
+        animation: none;
+      }
+    }
+    .part-two {
+      & h1 {
+        text-align: center;
+        margin-bottom: 11px;
+      }
+    }
+  }
+}
+.zikrPs {
+  width: 100% !important;
+}
+.azkarCollection {
+  max-height: 450px !important;
+}
+}
+@media (min-width : 451px) and (max-width: 575.98px) {
+  .rhap_progress-container , .rhap_volume-container {
+    z-index: -1;
+   }
+  
+  .container-nav {
+    padding: 10px 40px !important;
+
+    .overlay {
+      position: fixed;
+      z-index: 200;
+      top: 88px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.589);
+    }
+    .links {
+      opacity: 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      position: fixed !important;
+      top:88px;
+      width: 0;
+      left: -200px;
+      transition: 1s !important;
+      z-index: 1000;
+      & * {
+        opacity: 0 !important;
+        width: 0;
+      }
+    }
+    .links.show {
+      z-index: 10000;
+      display: flex !important;
+      flex-direction: column;
+      position: fixed;
+      opacity: 1 !important;
+      top: 88px;
+      width: 100%;
+      transition: 1s !important;
+      left: 0;
+      right: 0;
+      & a{
+        display: block !important;
+        opacity: 1 !important;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        color: white;
+        border-bottom: 1px solid #333;
+      }  
+    }
+    .burger {
+      height: 30px;
+      width: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      cursor: pointer;
+
+      & span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: white;
+      }
+    }
+  }
+  .mainPage {
+  .container {
+    width: 100% !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    .part-two {
+      width: 300px;
+      text-align: center;
+    }
+  }
+}
+.about {
+  .container {
+    width: 100%;
+    padding: 50px 40px 5px 40px;
+    & p{
+      width: 100%;
+    }
+  }
+}
+.prayers {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .img {
+      width: 200px;
+      margin-top: -20px;
+    }
+    .part-two {
+      margin-top: -20px;
+      & h1 {
+        text-align: center;
+      }
+      .button-input {
+        justify-content: center;
+        & input {
+          max-width: 100% !important;
+                }
+      }
+    }
+    .bottom-part {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.time {
+  display: none !important;
+}
+.azkar {
+  .container {
+    padding: 50px 20px 5px 20px;
+    text-align: center;
+    .before-types {
+      & h1 {
+        margin-bottom: 20px;
+      }
+
+    }
+  }
+}
+.hadith {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px 5px 30px;
+    .part-one {
+      .img {
+        width: 200px !important;
+      }
+    }
+    .part-two {
+      margin-top: -31px;
+
+    }
+  }
+}
+.ayah {
+  .container {
+    padding: 50px 40px 5px 40px;
+    flex-direction: column !important;
+    .part-one {
+      .img {
+        width: 300px !important;
+        animation: none;
+      }
+    }
+    .part-two {
+      & h1 {
+        text-align: center;
+        margin-bottom: 11px;
+      }
+    }
+  }
+}
+& .zikrPs {
+  width: 100% !important;
+}
+.azkarCollection {
+  max-height: 450px !important;
+}
+}
+
+@media (min-width: 576px) and (max-width: 780px) {
+  .rhap_progress-container , .rhap_volume-container {
+    z-index: -1;
+   }
+  
+  .container-nav {
+    padding: 10px 40px !important;
+    position: relative;
+    .overlay {
+      position: fixed;
+      z-index: 200;
+      top: 88px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.589);
+    }
+    .links {
+      opacity: 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      position: fixed !important;
+      top:88px;
+      width: 0;
+      left: -200px;
+      transition: 1s !important;
+      z-index: 1000;
+      & * {
+        opacity: 0 !important;
+        width: 0;
+      }
+    }
+    .links.show {
+      z-index: 10000;
+      display: flex !important;
+      flex-direction: column;
+      position: fixed;
+      opacity: 1 !important;
+      top: 88px;
+      width: 100%;
+      transition: 1s !important;
+      left: 0;
+      right: 0;
+      & a{
+        display: block !important;
+        opacity: 1 !important;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        color: white;
+        border-bottom: 1px solid #333;
+      }  
+    }
+    .burger {
+      height: 30px;
+      width: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      cursor: pointer;
+
+      & span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: white;
+      }
+    }
+  }
+    .mainPage {
+    .container {
+
+      flex-direction: column !important;
+      gap: 20px !important;
+
+      .part-two {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  }
+  .about {
+    .container {
+      width: 100% !important;
+    }
+  }
+  .prayers {
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .img {
+        width: 200px;
+        margin-top: -20px;
+      }
+      .part-two {
+        margin-top: -20px;
+      }
+    }
+  }
+  .azkar {
+    .container {
+      padding: 50px 40px 5px 40px;
+      text-align: center;
+    }
+  }
+  .hadith {
+    .container {
+      flex-direction: column;
+      text-align: center;
+      padding: 50px 30px 5px 30px;
+      .part-two {
+        margin-top: -31px;
+
+      }
+    }
+}
+.ayah {
+  .container {
+    padding: 50px 40px 5px 40px;
+    flex-direction: column !important;
+    .part-one {
+      .img {
+        width: 350px !important;
+        animation: none;
+
+      }
+    }
+    .part-two {
+      & h1 {
+        margin-bottom: 11px;
+      }
+    }
+  }
+}
+.zikrPs {
+  width: 100% !important;
+}
+
+}
+@media (min-width: 780.1px) and (max-width: 991.98px) {
+  .container-nav {
+    padding: 5px 40px !important;
+  }
+
+  .mainPage {
+    .container {
+
+      flex-direction: column !important;
+      gap: 20px !important;
+
+      .part-two {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  }
+  .prayers {
+    .container {
+      justify-content: center;
+      align-items: center;
+      .img {
+        width: 300px;
+        margin-top: -20px;
+      }
+      .part-two {
+        margin-top: -20px;
+      }
+    }
+  }
+  .hadith {
+    .container {
+      padding: 50px 40px 5px 40px;
+
+    }
+  }
+  .ayah {
+    .container {
+      padding: 50px 40px 5px 40px;
+      .part-one {
+        .img {
+          width: 350px !important;
+        }
+      }
+    }
+  }
+  .zikrPs {
+    width: 70% !important;
+  }
+  .before-types {
+    & h1 {
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  
+  .prayers {
+    .container {
+      justify-content: center;
+      align-items: center;
+      .img {
+        width: 400px;
+        margin-top: -20px;
+      }
+      .part-two {
+        margin-top: -20px;
+      }
+    }
+  }
+  .before-types {
+    & h1 {
+      text-align: center;
+    }
+  }
+}
+
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) {
+  .prayers {
+    .container {
+      justify-content: center;
+      align-items: center;
+      .img {
+        width: 400px;
+        margin-top: -20px;
+      }
+      .part-two {
+        margin-top: -20px;
+      }
+    }
+  }
+  }
+.burger.xSign {
+  transform: rotate(180deg);
+  margin-top: -10px;
+  & span:nth-of-type(1) {
+    transform: rotate(45deg) translate(6px, 7px);
+  }
+  
+  & span:nth-of-type(2) {
+    opacity: 0;
+  }
+  
+  & span:nth-of-type(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+  }
+}
